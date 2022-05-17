@@ -8,3 +8,5 @@
  var char7 = "Doutor Doom";
  var char8 = "Nova";
  var char9 = "Fênix";
+
+ const personagem2 = "char3";

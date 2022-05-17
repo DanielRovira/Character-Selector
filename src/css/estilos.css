@@ -153,8 +153,8 @@ main{
     animation-direction: alternate;
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado .tag2{
-    display: block;
+.selecao-de-personagens .lista-de-personagens .personagem .tag2{
+    display: none;
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
     top: 5px;
@@ -165,3 +165,8 @@ main{
     animation-direction: alternate;
 }
 
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado .tag2{
+    display: block;
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
