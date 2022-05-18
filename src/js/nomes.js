@@ -9,4 +9,4 @@
  var char8 = "Nova";
  var char9 = "Fênix";
 
- const personagem2 = "char3";
+ var personagem2 = "char3";
