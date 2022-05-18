@@ -1,6 +1,7 @@
 
 const personagens = document.querySelectorAll('.personagem')
 document.getElementById('nome-jogador-1').textContent = char1
+
 personagens.forEach((personagem) => {
     personagem.addEventListener('mouseenter', () => {
         const idSelecionado = personagem.attributes.id.value;
@@ -20,6 +21,7 @@ personagens.forEach((personagem) => {
         personagemSelecionado.classList.remove('selecionado');
         personagem.classList.add('selecionado');
     });
+    
     const imagemJogador2 = document.getElementById('personagem-jogador-2');
     const nomeJogador2 = document.getElementById('nome-jogador-2');
     const selecionado2 = document.getElementById(personagem2);
