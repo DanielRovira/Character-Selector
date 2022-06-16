@@ -1,28 +1,28 @@
 @media (max-width: 1280px){
-    .cabecalho .titulo{
+    .header .title{
         font-size: 40px;
     }
 
-    .selecao-de-personagens .lista-de-personagens{
+    .character-select .characters-list{
         max-width: 330px;
         font-size: 20px;
     }
 
-    .selecao-de-personagens .lista-de-personagens .personagem{
+    .character-select .characters-list .character{
         width: 100px;
         height: 100px;
     }
 
-    .selecao-de-personagens .personagem-grande .nome::before{
+    .character-select .character-big .name::before{
         height: 20px;
         width: 70%;
         left: 15%;
         bottom: -10px;
     }
-    .selecao-de-personagens .personagem-grande .nome h2{
+    .character-select .character-big .name h2{
         font-size: 20px;
     }
-    .selecao-de-personagens .personagem-grande img{
+    .character-select .character-big img{
         max-width: 80%;
         max-height: 80%;
     }
@@ -32,7 +32,7 @@
 @media (max-width: 767px){
     body::before{
         content: '';
-        background-image: url("../imagens/bg-mobile.gif");
+        background-image: url("../img/bg-mobile.gif");
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -47,40 +47,40 @@
         justify-content: start;
     }
 
-    .cabecalho .titulo{
+    .header .title{
         font-size: 26px;
     }
 
-    .selecao-de-personagens .personagem-grande{
+    .character-select .character-big{
         display: none;
     }
 
 }
 
 @media(max-width: 332px){
-    .cabecalho .titulo{
+    .header .title{
         font-size: 21px;
     }
 
-    .selecao-de-personagens .lista-de-personagens{
+    .character-select .characters-list{
         font-size: 17px;
     }
-    .selecao-de-personagens .lista-de-personagens .personagem{
+    .character-select .characters-list .character{
         width: 80px;
         height: 80px;
     }
 }
 
 @media(max-width: 273px){
-    .cabecalho .titulo{
+    .header .title{
         font-size: 17px;
     }
 
-    .selecao-de-personagens .lista-de-personagens{
+    .character-select .characters-list{
         font-size: 12px;
     }
 
-    .selecao-de-personagens .lista-de-personagens .personagem{
+    .character-select .characters-list .character{
         width: 60px;
         height: 60px;
     }

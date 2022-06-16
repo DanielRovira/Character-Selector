@@ -1,11 +1,11 @@
 body{
     font-family: 'ssf4', Courier, monospace;
-    background: var(--cor-secundaria);
+    background: var(--color-secondary);
 }
 
 body::before{
     content: '';
-    background-image: url("../imagens/bg.gif");
+    background-image: url("../img/bg.gif");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -22,42 +22,42 @@ main{
     justify-content: center;
 }
 
-.cabecalho{
+.header{
     z-index: 1;
     display: flex;
     justify-content: center;
 }
 
-.cabecalho .titulo{
-    color: var(--cor-titulo-fraco);
+.header .title{
+    color: var(--color-title-weak);
     text-transform: uppercase;
     font-size: 52px;
     line-height: 102px;
-    -webkit-text-stroke: 2px var(--cor-titulo-forte);
+    -webkit-text-stroke: 2px var(--color-title-strong);
 }
 
-.selecao-de-personagens{
+.character-select{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
 }
 
-.selecao-de-personagens .personagem-grande{
+.character-select .character-big{
     text-align: center;
     width: 30%;
     height: 70vh;
     position: relative;
 }
 
-.selecao-de-personagens .personagem-grande img{
+.character-select .character-big img{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.selecao-de-personagens .personagem-grande .nome::before{
+.character-select .character-big .name::before{
     content: '';
     height: 30px;
     width: 100%;
@@ -66,8 +66,8 @@ main{
     left: 0;
 }
 
-.selecao-de-personagens .personagem-grande .nome h2{
-    color: var(--cor-padrao);
+.character-select .character-big .name h2{
+    color: var(--color-default);
     font-family: 'command', sans-serif;
     position: absolute;
     bottom: 0;
@@ -75,15 +75,15 @@ main{
     font-size: 27px;
 }
 
-.selecao-de-personagens .personagem-grande.personagem-jogador-1 .nome::before{
-    background-color: var(--cor-azul-principal);
+.character-select .character-big.character-player-1 .name::before{
+    background-color: var(--color-blue-principal);
 }
 
-.selecao-de-personagens .personagem-grande.personagem-jogador-2 .nome::before{
-    background-color: var(--cor-vermelha-principal);
+.character-select .character-big.character-player-2 .name::before{
+    background-color: var(--color-red-principal);
 }
 
-.selecao-de-personagens .lista-de-personagens{
+.character-select .characters-list{
     display: flex;
     flex-wrap: wrap;
     max-width: 600px;
@@ -91,9 +91,9 @@ main{
     gap: 12px;
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem{
-    border: 2px solid var(--cor-padrao);
-    background-color: var(--cor-padrao);
+.character-select .characters-list .character{
+    border: 2px solid var(--color-default);
+    background-color: var(--color-default);
     width: 30%;
     height: 160px;
     cursor: pointer;
@@ -103,69 +103,69 @@ main{
     transition: 0.15s ease-in-out;
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem img{
+.character-select .characters-list .character img{
     width: 100%;
     height: 100%;
     border-radius: 5px;
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem.selecionado{
-    border: 2px solid var(--cor-azul-media);
+.character-select .characters-list .character.selected{
+    border: 2px solid var(--color-blue-median);
     animation: c-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem:hover{
+.character-select .characters-list .character:hover{
     animation: c-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;
     transform: scale(1.07);
     z-index: 2;
-    border: 2px solid var(--cor-azul-media)
+    border: 2px solid var(--color-blue-median)
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado{
-    border: 2px solid var(--cor-vermelha-fraca);
+.character-select .characters-list .character.player-2-selected{
+    border: 2px solid var(--color-red-weak);
     animation: c-glowing-red .3s ease-in-out infinite;
     animation-direction: alternate;
     transform: scale(1.07);
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado:hover{
+.character-select .characters-list .character.player-2-selected:hover{
     animation: c-glowing-red-blue .3s ease-in-out infinite;
     animation-direction: alternate;
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem .tag{
+.character-select .characters-list .character .tag{
     display: none;
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
     top: 5px;
     left: 5px;
-    color: var(--cor-azul-media);
+    color: var(--color-blue-median);
     transition: opacity .3 ease-in-out;
     animation: text-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem.selecionado .tag{
+.character-select .characters-list .character.selected .tag{
     display: block;
     animation: text-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem .tag2{
+.character-select .characters-list .character .tag2{
     display: none;
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
     top: 5px;
     right: 5px;
-    color: var(--cor-azul-media);
+    color: var(--color-blue-median);
     transition: opacity .3 ease-in-out;
     animation: text-glowing-red .3s ease-in-out infinite;
     animation-direction: alternate;
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado .tag2{
+.character-select .characters-list .character.player-2-selected .tag2{
     display: block;
     animation: text-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;

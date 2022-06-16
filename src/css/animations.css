@@ -1,0 +1,51 @@
+
+@keyframes c-glowing-blue {
+    0% {
+      box-shadow: 0 0 5px var(--color-blue-weak), 0 0 5px var(--color-blue-weak), 0 0 15px var(--color-blue-weak), 0 0 20px var(--color-blue-principal), 0 0 10px var(--color-blue-principal), 0 0 10px var(--color-blue-principal), 0 0 10px var(--color-blue-principal), 0 0 10px var(--color-blue-principal)
+    }
+  
+    to {
+      box-shadow: 0 0 2.5px var(--color-blue-weak), 0 0 2.5px var(--color-blue-weak), 0 0 7.5px var(--color-blue-weak), 0 0 10px var(--color-blue-principal), 0 0 5px var(--color-blue-principal), 0 0 5px var(--color-blue-principal), 0 0 5px var(--color-blue-principal), 0 0 2px var(--color-blue-principal)
+    }
+  }
+  
+  @keyframes c-glowing-red {
+    0% {
+      box-shadow: 0 0 5px var(--color-brown-weak), 0 0 5px var(--color-brown-weak), 0 0 15px var(--color-brown-weak), 0 0 20px var(--color-red-principal), 0 0 10px var(--color-red-principal), 0 0 10px var(--color-red-principal), 0 0 10px var(--color-red-principal), 0 0 10px var(--color-red-principal)
+    }
+  
+    to {
+      box-shadow: 0 0 2.5px var(--color-brown-weak), 0 0 2.5px var(--color-brown-weak), 0 0 7.5px var(--color-brown-weak), 0 0 10px var(--color-red-principal), 0 0 5px var(--color-red-principal), 0 0 5px var(--color-red-principal), 0 0 5px var(--color-red-principal), 0 0 2px var(--color-red-principal)
+    }
+  }
+
+  @keyframes c-glowing-red-blue {
+    0% {
+      box-shadow: 0 0 5px var(--color-brown-weak), 0 0 5px var(--color-brown-weak), 0 0 15px var(--color-brown-weak), 0 0 20px var(--color-blue-principal), 0 0 10px var(--color-blue-principal), 0 0 10px var(--color-blue-principal), 0 0 10px var(--color-blue-principal), 0 0 10px var(--color-blue-principal)
+    }
+  
+    to {
+      box-shadow: 0 0 2.5px var(--color-brown-weak), 0 0 2.5px var(--color-brown-weak), 0 0 7.5px var(--color-brown-weak), 0 0 10px var(--color-red-principal), 0 0 5px var(--color-red-principal), 0 0 5px var(--color-red-principal), 0 0 5px var(--color-red-principal), 0 0 2px var(--color-red-principal)
+    }
+  }
+  
+  @keyframes text-glowing-blue {
+    0% {
+      text-shadow: 0 0 1px var(--color-default), 0 0 1px var(--color-default), 0 0 1px var(--color-default), 0 0 1px var(--color-blue-median), 0 0 5px var(--color-blue-median), 0 0 2px var(--color-blue-median), 0 0 10px var(--color-blue-median), 0 0 10px var(--color-blue-median)
+    }
+  
+    to {
+      text-shadow: 0 0 .5px var(--color-default), 0 0 .5px var(--color-default), 0 0 .5px var(--color-default), 0 0 .5px var(--color-blue-median), 0 0 5px var(--color-blue-median), 0 0 .5px var(--color-blue-median), 0 0 5px var(--color-blue-median), 0 0 2px var(--color-blue-median)
+    }
+  }
+  
+  @keyframes text-glowing-red {
+    0% {
+      text-shadow: 0 0 1px var(--color-brown-weak), 0 0 1px var(--color-brown-weak), 0 0 1px var(--color-brown-weak), 0 0 1px var(--color-red-weak), 0 0 5px var(--color-red-weak), 0 0 2px var(--color-red-weak), 0 0 10px var(--color-red-weak), 0 0 10px var(--color-red-weak)
+    }
+  
+    to {
+      text-shadow: 0 0 .5px var(--color-brown-weak), 0 0 .5px var(--color-brown-weak), 0 0 .5px var(--color-brown-weak), 0 0 .5px var(--color-red-weak), 0 0 5px var(--color-red-weak), 0 0 .5px var(--color-red-weak), 0 0 5px var(--color-red-weak), 0 0 2px var(--color-red-weak)
+    }
+  }
+  

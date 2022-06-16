@@ -1,29 +1,29 @@
 
-const personagens = document.querySelectorAll('.personagem')
-const imagemJogador1 = document.getElementById('personagem-jogador-1');
-const nomeJogador1 = document.getElementById('nome-jogador-1');
-nomeJogador1.textContent = character.char1
-imagemJogador1.src = `./src/imagens/${character.char1}.png`
+const character = document.querySelectorAll('.character')
+const imagePlayer1 = document.getElementById('character-player-1');
+const namePlayer1 = document.getElementById('name-player-1');
+namePlayer1.textContent = characters.char1
+imagePlayer1.src = `./src/img/${characters.char1}.png`
 
-const imagemJogador2 = document.getElementById('personagem-jogador-2');
-const nomeJogador2 = document.getElementById('nome-jogador-2');
-const selecionado2 = document.getElementById(personagem2);
-nomeJogador2.textContent = character[personagem2];
-imagemJogador2.src = `./src/imagens/${character[personagem2]}.png`;
-selecionado2.classList.add('jogador-2-selecionado');
+const imagePlayer2 = document.getElementById('character-player-2');
+const namePlayer2 = document.getElementById('name-player-2');
+const selected2 = document.getElementById(character2);
+namePlayer2.textContent = characters[character2];
+imagePlayer2.src = `./src/img/${characters[character2]}.png`;
+selected2.classList.add('player-2-selected');
 
-personagens.forEach((personagem) => {
-    personagem.addEventListener('mouseenter', () => {
-        const idSelecionado = personagem.attributes.id.value;
-        const personagemSelecionado = document.querySelector('.selecionado');
-        nomeJogador1.textContent = character[idSelecionado];
-        imagemJogador1.src = `./src/imagens/${character[idSelecionado]}.png`;
-        personagemSelecionado.classList.remove('selecionado');
-        personagem.classList.add('selecionado');
+character.forEach((char) => {
+    char.addEventListener('mouseenter', () => {
+        const idSelected = char.attributes.id.value;
+        const characterSelected = document.querySelector('.selected');
+        namePlayer1.textContent = characters[idSelected];
+        imagePlayer1.src = `./src/img/${characters[idSelected]}.png`;
+        characterSelected.classList.remove('selected');
+        char.classList.add('selected');
     });
 });
 
 const images = document.querySelectorAll('.tableImg')
 images.forEach((image) => {
-    image.src = `./src/imagens/${character[image.parentNode.id]}.jpg`;
+    image.src = `./src/img/${characters[image.parentNode.id]}.jpg`;
 })
