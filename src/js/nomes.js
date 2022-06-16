@@ -1,12 +1,14 @@
 
- var char1 = "Thor";
- var char2 = "Homem de ferro";
- var char3 = "Viúva Negra";
- var char4 = "Hulk";
- var char5 = "Capitão América";
- var char6 = "Ultron";
- var char7 = "Doutor Doom";
- var char8 = "Nova";
- var char9 = "Fênix";
+var personagem2 = "char3";
 
- var personagem2 = "char3";
+var character = {
+    char1: "Thor",
+    char2: "Homem de ferro",
+    char3: "Viúva Negra",
+    char4: "Hulk",
+    char5: "Capitão América",
+    char6: "Ultron",
+    char7: "Doutor Doom",
+    char8: "Nova",
+    char9: "Fênix"
+}
