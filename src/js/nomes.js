@@ -1,7 +1,7 @@
 
-var personagem2 = "char3";
+const personagem2 = "char3";
 
-var character = {
+const character = {
     char1: "Thor",
     char2: "Homem de ferro",
     char3: "Viúva Negra",

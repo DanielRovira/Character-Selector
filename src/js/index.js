@@ -22,3 +22,9 @@ personagens.forEach((personagem) => {
     imagemJogador2.src = `./src/imagens/${character[personagem2]}.png`;
     selecionado2.classList.add('jogador-2-selecionado');
 });
+
+
+const images = document.querySelectorAll('.tableImg')
+images.forEach((image) => {
+    image.src = `./src/imagens/${character[image.parentNode.id]}.jpg`;
+})
