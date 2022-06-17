@@ -127,24 +127,19 @@ main{
     animation-direction: alternate;
 }
 
-.character-select .characters-list .character:hover{
-    animation: c-glowing-blue .3s ease-in-out infinite;
-    animation-direction: alternate;
-    transform: scale(1.07);
-    z-index: 2;
-    border: 2px solid var(--color-blue-median)
-}
-
 .character-select .characters-list .character.player-2-selected{
     border: 2px solid var(--color-red-weak);
     animation: c-glowing-red .3s ease-in-out infinite;
     animation-direction: alternate;
+}
+
+.character-select .characters-list .character:hover{
     transform: scale(1.07);
 }
 
-.character-select .characters-list .character.player-2-selected:hover{
-    animation: c-glowing-red-blue .3s ease-in-out infinite;
-    animation-direction: alternate;
+.character-select .characters-list .character.selected.player-2-selected:hover{
+    animation: c-glowing-red-blue 1s ease infinite;
+    animation-direction:normal;
 }
 
 .character-select .characters-list .character .tag{
