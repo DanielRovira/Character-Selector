@@ -14,9 +14,12 @@ selected2.classList.add('player-2-selected');
 
 var modif = 1;
 
+
+
+
+
     character.forEach((char) => {
-        char.addEventListener('click', () => {modif === 1 ? modif = 2 : modif = 1;})
-        char.addEventListener('mouseenter', () => {
+        function initMouseoverr() {
             const idSelected = char.attributes.id.value;
             const characterSelected = document.querySelector('.selected');
             const characterSelected2 = document.querySelector('.player-2-selected');
@@ -33,9 +36,18 @@ var modif = 1;
                 characterSelected2.classList.remove('player-2-selected');
                 char.classList.add('player-2-selected');
             }
-        })
+        }
+        char.addEventListener('click', () => {modif === 1 ? modif = 2 : modif = 1;console.log(modif);})
+        if (matchMedia('(pointer:fine)').matches) {char.addEventListener('mouseover', () => {initMouseoverr()})}
+        else {char.addEventListener('click', () => {initMouseoverr()})}
     })
 
+
+
+
+
+
+    
 const images = document.querySelectorAll('.tableImg')
 images.forEach((image) => {
     image.src = `./src/img/${characters[image.parentNode.id]}.jpg`;

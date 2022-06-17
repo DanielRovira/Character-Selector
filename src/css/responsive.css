@@ -90,7 +90,8 @@
 
     .character-select .character-big {
         order: -1;
-        width: auto;
+        width: 40vw;
+        /* overflow: hidden; */
     }
 
     .character-select .character-big img{
