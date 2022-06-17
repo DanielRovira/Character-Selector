@@ -141,7 +141,7 @@ main{
 
 .character-select .characters-list .character.selected.player-2-selected:hover{
     animation: c-glowing-red-blue 1s ease infinite;
-    animation-direction:normal;
+    animation-direction: normal;
 }
 
 .character-select .characters-list .character .tag{
@@ -178,4 +178,36 @@ main{
     display: block;
     animation: text-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;
+}
+
+.start-button-container {
+    display: flex;
+    position: absolute;
+    height: 510px;
+    width: 580px;
+    background-color: transparent;
+    display: none;
+    z-index: 3;
+}
+
+.start-button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    position: relative;
+    height: 100px;
+    width: 230px;
+    z-index: 4;
+    border-radius: 30px;
+    top: 40%;
+    left: 30%;
+    opacity: 90%;
+    font-weight: bold;
+    border: 5px solid black;
+    background-color: var(--color-title-strong);
+}
+
+.start-button:hover{
+    animation: c-glowing-brown .3s ease;
+    animation-fill-mode: forwards;
+    opacity: 100%;
 }

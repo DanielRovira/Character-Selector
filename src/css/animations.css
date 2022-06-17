@@ -57,3 +57,13 @@
     }
   }
   
+
+  @keyframes c-glowing-brown {
+    0% {
+        box-shadow: 0 0 2.5px var(--color-brown-weak), 0 0 2.5px var(--color-brown-weak), 0 0 7.5px var(--color-brown-weak), 0 0 10px var(--color-brown-weak), 0 0 5px var(--color-brown-weak), 0 0 5px var(---color-brown-weak), 0 0 5px var(--color-brown-weak), 0 0 2px var(--color-brown-weak)
+    }
+  
+    to {
+        box-shadow: 0 0 5px var(--color-brown-weak), 0 0 5px var(--color-brown-weak), 0 0 15px var(--color-brown-weak), 0 0 20px var(--color-brown-weak), 0 0 10px var(--color-brown-weak), 0 0 10px var(--color-brown-weak), 0 0 10px var(--color-brown-weak), 0 0 10px var(--color-brown-weak)
+    }
+  }

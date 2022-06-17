@@ -24,12 +24,16 @@ var modif = 1;
                 imagePlayer1.src = `./src/img/${characters[idSelected]}.png`;
                 characterSelected.classList.remove('selected');
                 char.classList.add('selected');
+                return
             break;
             case 2:
                 namePlayer2.textContent = characters[idSelected];
                 imagePlayer2.src = `./src/img/${characters[idSelected]}.png`;
                 characterSelected2.classList.remove('player-2-selected');
                 char.classList.add('player-2-selected');
+                char.addEventListener('click', () => {
+                    return document.querySelector('.start-button-container').style.display = 'block';
+                })
             }
         }
         char.addEventListener('click', () => {modif === 1 ? modif = 2 : modif = 1;console.log(modif);})
@@ -41,3 +45,6 @@ const images = document.querySelectorAll('.tableImg')
 images.forEach((image) => {
     image.src = `./src/img/${characters[image.parentNode.id]}.jpg`;
 })
+
+
+function start() {document.querySelector('.start-button-container').style.display = 'none'}
