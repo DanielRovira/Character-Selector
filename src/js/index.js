@@ -13,11 +13,6 @@ imagePlayer2.src = `./src/img/${characters[character2]}.png`;
 selected2.classList.add('player-2-selected');
 
 var modif = 1;
-
-
-
-
-
     character.forEach((char) => {
         function initMouseoverr() {
             const idSelected = char.attributes.id.value;
@@ -42,12 +37,6 @@ var modif = 1;
         else {char.addEventListener('click', () => {initMouseoverr()})}
     })
 
-
-
-
-
-
-    
 const images = document.querySelectorAll('.tableImg')
 images.forEach((image) => {
     image.src = `./src/img/${characters[image.parentNode.id]}.jpg`;
