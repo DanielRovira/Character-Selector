@@ -80,29 +80,21 @@
     }
 
     .characters-list {
-        /* width: 100%; */
         margin-top: 2vh;
     }
 
     .character-select {
         display: flex;
-        /* flex-flow: column; */
-        /* line-break: after; */
         flex-wrap: wrap;
-        /* gap: 50px; */
     }
 
     .character-select .character-big {
-        /* display: none; */
         order: -1;
         width: auto;
     }
 
     .character-select .character-big img{
-        /* max-width: none; */
-        /* max-height: none; */
         margin-top: 10px;
-        /* margin-bottom: 100px; */
         height: 200px;
     }
 
@@ -114,18 +106,40 @@
 
 }
 
-@media(max-width: 332px){
+@media(max-width: 360px){
     .header .title{
         font-size: 21px;
+    }
+
+    .character-select .characters-list{
+        max-width: 250px;
     }
 
     .character-select .characters-list{
         font-size: 17px;
     }
     .character-select .characters-list .character{
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
+
+    .character-select .character-big .player h2{
+        text-align: center;
+        left: -30px;
+    }
+
+    .character-select .character-big .player h2, .character-select .character-big .name h2{
+        font-size: 15px;
+    }
+
+    .character-select .character-big {
+        width: 100px;
+    }
+
+    .character-select .character-big img{
+        height: 150px;
+    }
+
 }
 
 @media(max-width: 273px){

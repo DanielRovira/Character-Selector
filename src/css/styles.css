@@ -1,7 +1,7 @@
 body{
     font-family: 'ssf4', Courier, monospace;
     background: var(--color-secondary);
-    width: 90vw;
+    width: 99vw;
 }
 
 body::before{
