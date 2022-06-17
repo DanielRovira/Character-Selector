@@ -2,6 +2,7 @@ body{
     font-family: 'ssf4', Courier, monospace;
     background: var(--color-secondary);
     width: 99vw;
+    overflow: hidden;
 }
 
 body::before{
