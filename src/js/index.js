@@ -14,7 +14,7 @@ selected2.classList.add('player-2-selected');
 
 var modif = 1;
     character.forEach((char) => {
-        function initMouseoverr() {
+        function initMouseover() {
             const idSelected = char.attributes.id.value;
             const characterSelected = document.querySelector('.selected');
             const characterSelected2 = document.querySelector('.player-2-selected');
@@ -24,21 +24,18 @@ var modif = 1;
                 imagePlayer1.src = `./src/img/${characters[idSelected]}.png`;
                 characterSelected.classList.remove('selected');
                 char.classList.add('selected');
-                return
             break;
             case 2:
                 namePlayer2.textContent = characters[idSelected];
                 imagePlayer2.src = `./src/img/${characters[idSelected]}.png`;
                 characterSelected2.classList.remove('player-2-selected');
                 char.classList.add('player-2-selected');
-                char.addEventListener('click', () => {
-                    return document.querySelector('.start-button-container').style.display = 'block';
-                })
             }
         }
-        char.addEventListener('click', () => {modif === 1 ? modif = 2 : modif = 1;console.log(modif);})
-        if (matchMedia('(pointer:fine)').matches) {char.addEventListener('mouseover', () => {initMouseoverr()})}
-        else {char.addEventListener('click', () => {initMouseoverr()})}
+        function appear() {modif = 1; document.querySelector('.start-button-container').style.display = 'block'}
+        if (matchMedia('(pointer:fine)').matches) {char.addEventListener('mouseover', () => {initMouseover()})}
+        else {char.addEventListener('click', () => {;initMouseover()})}
+        char.addEventListener('click', () => {modif === 1 ? modif = 2 : appear()})
     })
 
 const images = document.querySelectorAll('.tableImg')
@@ -46,5 +43,5 @@ images.forEach((image) => {
     image.src = `./src/img/${characters[image.parentNode.id]}.jpg`;
 })
 
-
 function start() {document.querySelector('.start-button-container').style.display = 'none'}
+initMouseover()
