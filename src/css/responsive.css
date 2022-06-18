@@ -104,6 +104,14 @@
         width: 160px;
         margin: auto;
     }
+    
+    .start-button {
+        top:0;
+        height: 70px;
+        width: 180px;
+        font-size: 40px;
+        left: 35%;
+}
 
 }
 
