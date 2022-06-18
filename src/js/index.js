@@ -34,7 +34,7 @@ var modif = 1;
         }
         function appear() {modif = 1; document.querySelector('.start-button-container').style.display = 'block'}
         if (matchMedia('(pointer:fine)').matches) {char.addEventListener('mouseover', () => {initMouseover()})}
-        else {char.addEventListener('click', () => {;initMouseover()})}
+        else {char.addEventListener('click', () => {initMouseover()})}
         char.addEventListener('click', () => {modif === 1 ? modif = 2 : appear()})
     })
 
