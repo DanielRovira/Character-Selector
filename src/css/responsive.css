@@ -107,6 +107,12 @@
 
 }
 
+@media (max-width: 420px){
+    .character-select .characters-list{
+        font-size: 17px;
+    }
+}
+
 @media(max-width: 360px){
     .header .title{
         font-size: 21px;
@@ -117,7 +123,7 @@
     }
 
     .character-select .characters-list{
-        font-size: 17px;
+        font-size: 15px;
     }
     .character-select .characters-list .character{
         width: 70px;
