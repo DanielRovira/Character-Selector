@@ -5,6 +5,8 @@ body{
     background: var(--color-secondary);
     width: 99vw;
     overflow: hidden;
+    animation: fadeIn 1s backwards;
+    animation-delay: .2s;
 }
 
 body::before{

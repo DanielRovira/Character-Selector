@@ -67,3 +67,8 @@
         box-shadow: 0 0 5px var(--color-brown-weak), 0 0 5px var(--color-brown-weak), 0 0 15px var(--color-brown-weak), 0 0 20px var(--color-brown-weak), 0 0 10px var(--color-brown-weak), 0 0 10px var(--color-brown-weak), 0 0 10px var(--color-brown-weak), 0 0 10px var(--color-brown-weak)
     }
   }
+
+  @keyframes fadeIn {
+    0% {opacity: 0}
+    to {opacity: 100}
+  }
