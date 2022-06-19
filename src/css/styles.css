@@ -42,7 +42,7 @@ main{
     justify-content: center;
 }
 
-.header .title{
+.header .title, .fight {
     color: var(--color-title-weak);
     text-transform: uppercase;
     font-size: 52px;
@@ -233,4 +233,17 @@ main{
 .buttons-container .start-button:active{
     box-shadow: none;
     animation: click .150s ease-in-out;
+}
+
+.fight {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -110px;
+    z-index: -1;
+    letter-spacing: 15px;
+    animation: fadeIn .5s forwards;
+    animation-delay: .5s;
+    animation-play-state: paused;
 }
