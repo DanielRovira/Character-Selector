@@ -223,7 +223,7 @@ main{
     background-color: #ffffff;
     cursor: pointer;
     box-shadow: 0 4px black;
-    transition: .05s
+    transition: .05s;
 }
 
 .buttons-container .start-button:hover{
