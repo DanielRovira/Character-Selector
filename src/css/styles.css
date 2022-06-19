@@ -189,7 +189,7 @@ main{
     animation-direction: alternate;
 }
 
-.start-button-container {
+.buttons-container {
     display: flex;
     position: absolute;
     height: 510px;
@@ -213,8 +213,6 @@ main{
     font-weight: bold;
     border: 5px solid black;
     background-color: var(--color-title-strong);
-    
-    
 }
 
 .start-button:hover{

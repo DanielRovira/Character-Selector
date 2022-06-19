@@ -30,7 +30,7 @@ character.forEach((char, i) => {
             char.classList.add('player-2-selected');
         }
     }
-    function appear() {modif = 1; document.querySelector('.start-button-container').style.display = 'block'}
+    function appear() {modif = 1; document.querySelector('.buttons-container').style.display = 'block'}
     if (matchMedia('(pointer:fine)').matches) {char.addEventListener('mouseover', () => {initMouseover()})}
     else {char.addEventListener('click', () => {initMouseover()})}
     char.addEventListener('click', () => {modif === 1 ? modif = 2 : appear()})
@@ -49,5 +49,5 @@ setTimeout(() => {
  
 imagePlayer2.src = `./src/img/${characters[character2]}.png`;
 selected2.classList.add('player-2-selected');
-function start() {document.querySelector('.start-button-container').style.display = 'none'}
+function start() {document.querySelector('.buttons-container').style.display = 'none'}
 initMouseover()
