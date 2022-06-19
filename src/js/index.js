@@ -30,7 +30,7 @@ character.forEach((char, i) => {
             char.classList.add('player-2-selected');
         }
     }
-    function appear() {modif = 1; document.querySelector('.buttons-container').style.display = 'block'}
+    function appear() {modif = 1; document.querySelector('.buttons-container').style.display = 'block';             document.querySelector('.buttons-container').getElementsByTagName('ul')[0].style.animation = 'none';}
     if (matchMedia('(pointer:fine)').matches) {char.addEventListener('mouseover', () => {initMouseover()})}
     else {char.addEventListener('click', () => {initMouseover()})}
     char.addEventListener('click', () => {modif === 1 ? modif = 2 : appear()})
@@ -50,15 +50,17 @@ setTimeout(() => {
 imagePlayer2.src = `./src/img/${characters[character2]}.png`;
 selected2.classList.add('player-2-selected');
 
-function button(btn) {setTimeout(() => {
+function button(btn) {
+    document.querySelector('.buttons-container').getElementsByTagName('ul')[0].style.animation = 'fadeIn .3s reverse forwards';
+    setTimeout(() => {
     switch (btn) {
         case 'start':
+            document.getElementsByTagName('main')[0].style.animation = 'fadeIn .5s reverse';
             document.querySelector('.buttons-container').style.display = 'none';
         break;
         case 'select':
             document.querySelector('.buttons-container').style.display = 'none';
-        break;
-    }
-}, 150)};
+        break;}
+}, 300)};
     
 initMouseover();

@@ -221,8 +221,9 @@ main{
     opacity: 80%;
     font-weight: bold;
     background-color: #ffffff;
-    pointer: pointer;
+    cursor: pointer;
     box-shadow: 0 4px black;
+    transition: .05s
 }
 
 .buttons-container .start-button:hover{
@@ -230,6 +231,6 @@ main{
 }
 
 .buttons-container .start-button:active{
-    transform: translateY(4px);
     box-shadow: none;
+    animation: click .150s ease-in-out;
 }
