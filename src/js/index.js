@@ -10,6 +10,12 @@ var modif = 1;
 
 namePlayer1.textContent = characters.char1;
 namePlayer2.textContent = characters[character2];
+imagePlayer2.src = `./src/img/${characters[character2]}.png`;
+selected2.classList.add('player-2-selected');
+
+images.forEach((image) => {
+    image.src = `./src/img/${characters[image.parentNode.id]}.jpg`;
+})
 
 character.forEach((char, i) => {
     const idSelected = char.attributes.id.value;
@@ -30,37 +36,41 @@ character.forEach((char, i) => {
             char.classList.add('player-2-selected');
         }
     }
-    function appear() {modif = 1; document.querySelector('.buttons-container').style.display = 'block';            document.querySelector('.buttons-container').getElementsByTagName('ul')[0].style.animation = 'none';}
-    if (matchMedia('(pointer:fine)').matches) {char.addEventListener('mouseover', () => {initMouseover()})}
-    else {char.addEventListener('click', () => {initMouseover()})}
+    function appear() {
+        modif = 1;
+        document.querySelector('.buttons-container').style.display = 'block';
+        document.querySelector('.buttons-container').getElementsByTagName('ul')[0].style.animation = 'none';
+    }
+    
+    if (matchMedia('(pointer:fine)').matches) {
+        char.addEventListener('mouseover', () => {initMouseover()})
+    } else {
+        char.addEventListener('click', () => {initMouseover()})
+    }
+    
     char.addEventListener('click', () => {modif === 1 ? modif = 2 : appear()})
+
+    // Preload images
     setTimeout(() => {
     imagePlayer1.src = `./src/img/${characters[idSelected]}.png`;
     }, i * 100)
 })
 
-images.forEach((image) => {
-    image.src = `./src/img/${characters[image.parentNode.id]}.jpg`;
-})
-
 setTimeout(() => {
     imagePlayer1.src = `./src/img/${characters.char1}.png`;
-    }, 900)
- 
-imagePlayer2.src = `./src/img/${characters[character2]}.png`;
-selected2.classList.add('player-2-selected');
+}, 900)
 
 function button(btn) {
-    document.querySelector('.buttons-container').getElementsByTagName('ul')[0].style.animation = 'fadeIn .3s reverse forwards';
+    document.querySelector('.buttons-container').getElementsByTagName('ul')[0].style.animation = 'fadeIn .15s reverse forwards';
     setTimeout(() => {
     switch (btn) {
         case 'start':
-            document.getElementsByTagName('main')[0].style.animation = 'fadeIn .7s reverse forwards';
+            document.getElementsByTagName('main')[0].style.animation = 'fadeIn .2s reverse forwards';
             document.querySelector('.fight').style.animationPlayState = 'running';
         break;
         case 'select':
             document.querySelector('.buttons-container').style.display = 'none';
         break;}
-}, 300)};
+}, 150)};
     
 initMouseover();
