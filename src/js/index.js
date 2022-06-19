@@ -49,5 +49,10 @@ setTimeout(() => {
  
 imagePlayer2.src = `./src/img/${characters[character2]}.png`;
 selected2.classList.add('player-2-selected');
-function start() {document.querySelector('.buttons-container').style.display = 'none'}
-initMouseover()
+function start() {
+    setTimeout(() => {
+        document.querySelector('.buttons-container').style.display = 'none';
+        
+    }, 250);
+};
+initMouseover();
