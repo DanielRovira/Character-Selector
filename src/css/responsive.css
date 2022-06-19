@@ -105,12 +105,12 @@
         margin: auto;
     }
     
-    .buttons-container {
+    .button-container {
         width: 300px;
         height: 270px;
     }
 
-    .start-button {
+    .buttons-container .start-button {
         top: -200px;
         height: 70px;
         width: 180px;

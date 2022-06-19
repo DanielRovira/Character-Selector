@@ -199,7 +199,7 @@ main{
     z-index: 3;
 }
 
-.start-button {
+.buttons-container .start-button {
     font-family: 'Courier New', Courier, monospace;
     font-size: 60px;
     position: relative;
@@ -215,7 +215,7 @@ main{
     background-color: var(--color-title-strong);
 }
 
-.start-button:hover{
+.buttons-container .start-button:hover{
     animation: c-glowing-brown .3s ease;
     animation-fill-mode: forwards;
     opacity: 100%;
