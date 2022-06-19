@@ -105,17 +105,14 @@
         margin: auto;
     }
     
-    .buttons-container {
-        width: 300px;
-        height: 270px;
+    .buttons-container ul {
+        top: -200px;
     }
 
     .buttons-container .start-button {
-        top: -200px;
         height: 70px;
         width: 180px;
         font-size: 40px;
-        left: 20%;
     }
 
 }
