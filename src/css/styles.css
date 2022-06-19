@@ -197,8 +197,6 @@ main{
     background-color: transparent;
     display: none;
     z-index: 3;
-    border: 1px solid white;
-
 }
 
 .buttons-container ul {
@@ -234,5 +232,4 @@ main{
 .buttons-container .start-button:active{
     transform: translateY(4px);
     box-shadow: none;
-
 }
