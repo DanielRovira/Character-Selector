@@ -231,7 +231,7 @@ main{
 }
 
 .buttons-container .start-button:active{
-    animation: click .08s ease-in-out forwards;
+    animation: click .08s ease-in-out;
 }
 
 .fight {
