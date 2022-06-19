@@ -199,6 +199,11 @@ main{
     z-index: 3;
 }
 
+.buttons-container ul {
+    gap: 10px;
+    border: 1px solid white;
+}
+
 .buttons-container .start-button {
     font-family: 'Courier New', Courier, monospace;
     font-size: 60px;

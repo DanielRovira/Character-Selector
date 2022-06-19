@@ -32,7 +32,12 @@
             </div>
 
             <ul class="characters-list">
-                <div class="buttons-container"><button class="start-button" onclick="{start()}">Ready?</button></div>
+                <div class="buttons-container">
+                    <ul>
+                        <li><button id="start-button" class="start-button" onclick="{start()}">Ready?</button></li>
+                        <li><button id="select-button" class="start-button" onclick="{select()}">Select</button></li>
+                    </ul>
+                </div>
                 <li class="character selected" id="char1">
                     <span class="tag">1P</span>
                     <span class="tag2">2P</span>
